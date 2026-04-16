@@ -33,7 +33,7 @@ jobs:
       - name: "Passo 4: Gerar Codigo Dinamico"
         id: gerar_codigo
         run: |
-          RANDOM_NUM =$RANDOM
+          RANDOM_NUM=$RANDOM
           echo "BUILD_HASH=$RANDOM_NUM" >> $GITHUB_ENV
       - name: "Passo 5: Usar Codigo Dinamico"
         run: |
